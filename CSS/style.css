@@ -1,0 +1,291 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    position: relative;
+}
+
+p{
+    color: white;
+    font-size: 16px;
+}
+
+#backVideo{
+    position       : fixed;
+    left           : 0;
+    top            : 0;
+    object-fit     : cover;
+    min-width      : 100%;
+    min-height     : 100%;
+}
+
+.sun{
+    height: 200px;
+    width: 200px;
+    background: #FF6500;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========COMMON FOR ALL ORBITS========== */
+.mercuryOrbit , .venusOrbit, .earthOrbit, .marsOrbit, .jupiterOrbit, .saturnOrbit, .uranusOrbit, .neptuneOrbit, .plutoOrbit{
+    position: absolute;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+/* ========COMMON FOR ALL ORBITS========== */
+
+/* ====================COMMON FOR ALL PLANETS=============== */
+.mercury, .venus, .earth, .mars, .jupiter, .saturn, .uranus, .neptune, .pluto {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ====================COMMON FOR ALL PLANETS=============== */
+
+/* ======INDIVIDUAL ORBIT AND PLANET STYLING============== */
+.mercuryOrbit{
+    height: 300px;
+    width: 300px;
+    animation: mercuryOrbitAnimation 5s linear infinite;
+}
+
+.mercury{
+    width: 50px;
+    height: 50px;
+    background: gray;
+    left: 70%;
+}
+
+@keyframes mercuryOrbitAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* ==============MERCURY CSS END============== */
+
+/* ==============VENUS CSS============== */
+.venusOrbit{
+    height: 450px;
+    width: 450px;
+    animation: venusOrbitAnimation 10s linear infinite;
+
+}
+
+.venus{
+    width: 70px;
+    height: 70px;
+    background: #FFC55A;
+    left: 70%;
+
+}
+
+@keyframes venusOrbitAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* ==============VENUS CSS END============== */
+
+/* ==============EARTH CSS============== */
+.earthOrbit{
+    height: 600px;
+    width: 600px;
+    animation: earthOrbitAnimation 15s linear infinite;
+}
+
+.earth{
+    width: 80px;
+    height: 80px;
+    background: #03AED2;
+    left: 65%;
+}
+
+@keyframes earthOrbitAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+/* ==============EARTH CSS END============== */
+
+/* ==============MARS CSS================== */
+.marsOrbit{
+    height: 750px;
+    width: 750px;
+    animation: marsOrbitAnimation 25s linear infinite;
+}
+
+.mars{
+    width: 60px;
+    height: 60px;
+    background: #D80032;
+    left: 65%;
+}
+
+@keyframes marsOrbitAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+/* ==============MARS CSS END================== */
+
+/* ==============JUPITER CSS================== */
+.jupiterOrbit{
+    height: 1000px;
+    width: 1000px;
+    animation: jupiterOrbitAnimation 40s linear infinite;
+}
+
+.jupiter{
+    width: 150px;
+    height: 150px;
+    background: #C07F00;
+    left: 65%;
+}
+
+@keyframes jupiterOrbitAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* ==============JUPITER CSS END================== */
+
+/* ==============SATURN CSS===================== */
+.saturnOrbit{
+    height: 1200px;
+    width: 1200px;
+    animation: saturnOrbitAnimation 60s linear infinite;
+}
+
+.saturn{
+    width: 130px;
+    height: 130px;
+    background: #C08B5C;
+    left: 65%;
+}
+
+@keyframes saturnOrbitAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* ==============SATURN CSS END================== */
+
+/* ==============URANUS CSS================== */
+.uranusOrbit{
+    height: 1400px;
+    width: 1400px;
+    animation: saturnOrbitAnimation 75s linear infinite;
+}
+
+.uranus{
+    width: 110px;
+    height: 110px;
+    background: #BED7DC;
+    left: 65%;
+}
+
+@keyframes uranusOrbitAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+/* ==============URANUS CSS END================== */
+
+/* ==============NEPTUNE CSS================== */
+
+.neptuneOrbit{
+    height: 1600px;
+    width: 1600px;
+    animation: neptuneOrbitAnimation 85s linear infinite;
+}
+
+.neptune{
+    width: 85px;
+    height: 85px;
+    background: #1D24CA;
+    left: 62%;
+}
+
+@keyframes neptuneOrbitAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+/* ==============NEPTUNE CSS END================== */
+
+/* ==============PLUTO CSS================== */
+
+.plutoOrbit{
+    height: 1800px;
+    width: 1800px;
+    animation: plutoOrbitAnimation 100s linear infinite;
+}
+
+.pluto{
+    width: 30px;
+    height: 30px;
+    background: #C7B7A3;
+    left: 60%;
+}
+
+@keyframes plutoOrbitAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+/* ==============PLUTO CSS END================== */
+
+
+
+
+
+
+
+
